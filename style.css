@@ -1,4 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
 .main{
 	width: 100%;
 	margin: auto;
+}
+.column{
+	float: left;
+	width: 50%;
+	
+}
+.row {
+  margin: 8px -16px;
 }
