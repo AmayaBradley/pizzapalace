@@ -18,7 +18,7 @@ var chickenSize = parseInt(document.getElementById("size2").value);
 var chickenCrust = parseInt(document.getElementById("crust2").value);
 var chickenTop = parseInt(document.getElementById("toppings2").value);
 var chickenAmt = parseInt(document.getElementById("amt2").value);
-var chickenTotal = ((chickenSize + ChickenCrust + chickenTop) * chickenAmt);
+var chickenTotal = ((chickenSize + chickenCrust + chickenTop) * chickenAmt);
 
 
 var chitikaSize = parseInt(document.getElementById("size3").value);
@@ -56,5 +56,7 @@ var meaTotal = ((meaSize + meaCrust + meaTop) * meaAmt);
 
 
 
-var finalAmt =  
+var finalTotal = eTotal + aTotal + chickenTotal + chitikaTotal + creamyTotal + hawTotal + marTotal + meaTotal;
+
+alert(finalTotal);
 }

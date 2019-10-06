@@ -22,12 +22,14 @@
     On checkout, the application displays the orders’ summary together with the total amount charged. For example, if the customer has made more than one pizza order, on checkout the application displays a summary of all the orders he/she has made and the total amount to pay for all his/her orders.
 	-->
 	<div class="main">
+		<button onclick="getTotal()">Get Total Cost</button>
 		<div class="row">
 			<div class="column">
 				<p>Veg Extravaganza Ksh 1200</p>
 				<img src="images/93646-veg-extravaganza.jpg" style="width:100%">
 				<div class="size">
 					<select id="size">
+						
 						<option value="1000" class="small">Small</option>
 						<option value="1200" class="medium">Medium</option>
 						<option value="1400" class="large">Large</option>
@@ -36,6 +38,7 @@
 				</div>
 				<div class="crust">
 					<select id="crust">
+						
 						<option value="500" class="crispy">Crispy</option>
 						<option value="600" class="stuffed">Stuffed</option>
 						<option value="700" class="glutenfree">Gluten-Free</option>
@@ -44,6 +47,7 @@
 				</div>
 				<div class="toppings">
 					<select id="toppings">
+						
 						<option value="300" class="pepperoni">Pepperoni</option>
 						<option value="400" class="mushrooms">Mushrooms</option>
 						<option value="500" class="onions">Onions</option>
@@ -58,14 +62,15 @@
 					</select>
 				</div>
 				<div class="amount">
-					<input type="text" placeholder="Enter Amount 1, 2, 3 etc" id="amt">
+					<input type="text" placeholder="Enter Amount 1, 2, 3 etc" id="amt" value="0">
 				</div>
 		</div>
 					<div class="column">
 						<p>American Cheeseburger</p>
 				<img src="images/93646-veg-extravaganza.jpg" style="width:100%">
 				<div class="size1">
-					<select id="size">
+					<select id="size1">
+						
 						<option value="1000" class="small">Small</option>
 						<option value="1200" class="medium">Medium</option>
 						<option value="1400" class="large">Large</option>
@@ -73,7 +78,8 @@
 					</select>
 				</div>
 				<div class="crust1">
-					<select id="crust">
+					<select id="crust1">
+						
 						<option value="500" class="crispy">Crispy</option>
 						<option value="600" class="stuffed">Stuffed</option>
 						<option value="700" class="glutenfree">Gluten-Free</option>
@@ -81,7 +87,8 @@
 					</select>
 				</div>
 				<div class="toppings1">
-					<select id="toppings">
+					<select id="toppings1">
+						
 						<option value="300" class="pepperoni">Pepperoni</option>
 						<option value="400" class="mushrooms">Mushrooms</option>
 						<option value="500" class="onions">Onions</option>
@@ -96,7 +103,7 @@
 					</select>
 				</div>
 				<div class="amount">
-					<input type="text" placeholder="Enter Amount 1, 2, 3 etc" id="amt1">
+					<input type="text" placeholder="Enter Amount 1, 2, 3 etc" id="amt1" value="0">
 				</div>
 		</div>
 					<div class="column">
@@ -104,14 +111,16 @@
 				<img src="images/93646-veg-extravaganza.jpg" style="width:100%">
 				<div class="size">
 					<select id="size2">
+						
 						<option value="1000" class="small">Small</option>
 						<option value="1200" class="medium">Medium</option>
 						<option value="1400" class="large">Large</option>
 						
 					</select>
 				</div>
-				<div class="crust2">
-					<select id="crust">
+				<div class="crust">
+					<select id="crust2">
+						
 						<option value="500" class="crispy">Crispy</option>
 						<option value="600" class="stuffed">Stuffed</option>
 						<option value="700" class="glutenfree">Gluten-Free</option>
@@ -119,7 +128,8 @@
 					</select>
 				</div>
 				<div class="toppings2">
-					<select id="toppings">
+					<select id="toppings2">
+						
 						<option value="300" class="pepperoni">Pepperoni</option>
 						<option value="400" class="mushrooms">Mushrooms</option>
 						<option value="500" class="onions">Onions</option>
@@ -134,7 +144,7 @@
 					</select>
 				</div>
 				<div class="amount">
-					<input type="text" placeholder="Enter Amount 1, 2, 3 etc" id="amt2">
+					<input type="text" placeholder="Enter Amount 1, 2, 3 etc" id="amt2" value="0">
 				</div>
 		</div>
 					<div class="column">
@@ -142,14 +152,16 @@
 				<img src="images/93646-veg-extravaganza.jpg" style="width:100%">
 				<div class="size">
 					<select id="size3">
+						
 						<option value="1000" class="small">Small</option>
 						<option value="1200" class="medium">Medium</option>
 						<option value="1400" class="large">Large</option>
 						
 					</select>
 				</div>
-				<div class="crust3">
-					<select id="crust">
+				<div class="crust">
+					<select id="crust3">
+						
 						<option value="500" class="crispy">Crispy</option>
 						<option value="600" class="stuffed">Stuffed</option>
 						<option value="700" class="glutenfree">Gluten-Free</option>
@@ -157,7 +169,8 @@
 					</select>
 				</div>
 				<div class="toppings3">
-					<select id="toppings">
+					<select id="toppings3">
+						<option value="0" class="null"></option>
 						<option value="300" class="pepperoni">Pepperoni</option>
 						<option value="400" class="mushrooms">Mushrooms</option>
 						<option value="500" class="onions">Onions</option>
@@ -172,7 +185,7 @@
 					</select>
 				</div>
 				<div class="amount">
-					<input type="text" placeholder="Enter Amount 1, 2, 3 etc" id="amt3">
+					<input type="text" placeholder="Enter Amount 1, 2, 3 etc" id="amt3" value="0">
 				</div>
 		</div>
 					<div class="column">
@@ -180,6 +193,7 @@
 				<img src="images/93646-veg-extravaganza.jpg" style="width:100%">
 				<div class="size">
 					<select id="size4">
+						
 						<option value="1000" class="small">Small</option>
 						<option value="1200" class="medium">Medium</option>
 						<option value="1400" class="large">Large</option>
@@ -188,6 +202,7 @@
 				</div>
 				<div class="crust">
 					<select id="crust4">
+						
 						<option value="500" class="crispy">Crispy</option>
 						<option value="600" class="stuffed">Stuffed</option>
 						<option value="700" class="glutenfree">Gluten-Free</option>
@@ -195,7 +210,8 @@
 					</select>
 				</div>
 				<div class="toppings4">
-					<select id="toppings">
+					<select id="toppings4">
+						
 						<option value="300" class="pepperoni">Pepperoni</option>
 						<option value="400" class="mushrooms">Mushrooms</option>
 						<option value="500" class="onions">Onions</option>
@@ -210,7 +226,7 @@
 					</select>
 				</div>
 				<div class="amount">
-					<input type="text" placeholder="Enter Amount 1, 2, 3 etc" id="amt4">
+					<input type="text" placeholder="Enter Amount 1, 2, 3 etc" id="amt4" value="0">
 				</div>
 		</div>
 					<div class="column">
@@ -218,22 +234,25 @@
 				<img src="images/93646-veg-extravaganza.jpg" style="width:100%">
 				<div class="size">
 					<select id="size5">
+						
 						<option value="1000" class="small">Small</option>
 						<option value="1200" class="medium">Medium</option>
 						<option value="1400" class="large">Large</option>
 						
 					</select>
 				</div>
-				<div class="crust5">
-					<select id="crust">
+				<div class="crust">
+					<select id="crust5">
+						
 						<option value="500" class="crispy">Crispy</option>
 						<option value="600" class="stuffed">Stuffed</option>
 						<option value="700" class="glutenfree">Gluten-Free</option>
 
 					</select>
 				</div>
-				<div class="toppings5">
-					<select id="toppings">
+				<div class="toppings">
+					<select id="toppings5">
+						
 						<option value="300" class="pepperoni">Pepperoni</option>
 						<option value="400" class="mushrooms">Mushrooms</option>
 						<option value="500" class="onions">Onions</option>
@@ -248,14 +267,15 @@
 					</select>
 				</div>
 				<div class="amount">
-					<input type="text" placeholder="Enter Amount 1, 2, 3 etc" id="amt5">
+					<input type="text" placeholder="Enter Amount 1, 2, 3 etc" id="amt5" value="0">
 				</div>
 		</div>
 					<div class="column">
 						<p>Margherita Pizza</p>
 				<img src="images/93646-veg-extravaganza.jpg" style="width:100%">
-				<div class="size6">
-					<select id="size">
+				<div class="size">
+					<select id="size6">
+						
 						<option value="1000" class="small">Small</option>
 						<option value="1200" class="medium">Medium</option>
 						<option value="1400" class="large">Large</option>
@@ -264,6 +284,7 @@
 				</div>
 				<div class="crust">
 					<select id="crust6">
+						
 						<option value="500" class="crispy">Crispy</option>
 						<option value="600" class="stuffed">Stuffed</option>
 						<option value="700" class="glutenfree">Gluten-Free</option>
@@ -272,6 +293,7 @@
 				</div>
 				<div class="toppings">
 					<select id="toppings6">
+						
 						<option value="300" class="pepperoni">Pepperoni</option>
 						<option value="400" class="mushrooms">Mushrooms</option>
 						<option value="500" class="onions">Onions</option>
@@ -286,7 +308,7 @@
 					</select>
 				</div>
 				<div class="amount">
-					<input type="text" placeholder="Enter Amount 1, 2, 3 etc" id="amt6">
+					<input type="text" placeholder="Enter Amount 1, 2, 3 etc" id="amt6" value="0">
 				</div>
 		</div>
 					<div class="column">
@@ -294,6 +316,7 @@
 				<img src="images/93646-veg-extravaganza.jpg" style="width:100%">
 				<div class="size">
 					<select id="size7">
+						
 						<option value="1000" class="small">Small</option>
 						<option value="1200" class="medium">Medium</option>
 						<option value="1400" class="large">Large</option>
@@ -302,6 +325,7 @@
 				</div>
 				<div class="crust">
 					<select id="crust7">
+						
 						<option value="500" class="crispy">Crispy</option>
 						<option value="600" class="stuffed">Stuffed</option>
 						<option value="700" class="glutenfree">Gluten-Free</option>
@@ -310,6 +334,7 @@
 				</div>
 				<div class="toppings">
 					<select id="toppings7">
+						
 						<option value="300" class="pepperoni">Pepperoni</option>
 						<option value="400" class="mushrooms">Mushrooms</option>
 						<option value="500" class="onions">Onions</option>
@@ -324,10 +349,10 @@
 					</select>
 				</div>
 				<div class="amount">
-					<input type="text" placeholder="Enter Amount 1, 2, 3 etc" id="amt7">
+					<input type="text" placeholder="Enter Amount 1, 2, 3 etc" id="amt7" value="0">
 				</div>
 		</div>		
-	</div>
+	</div>-->
 <script type="text/javascript" src="style.js"></script>
 
 </body>
