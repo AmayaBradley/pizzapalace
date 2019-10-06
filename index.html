@@ -2,9 +2,576 @@
 <html>
 <head>
 	<title>pizza.palace</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	
+	<!--
+		Choose the size of pizza I want e.g Small, Medium, Large
+		Choose what kind of crust I would like the pizza to have e.g Crispy, Stuffed, Gluten-free
+		Choose the topping(s) I want on my pizza.
+		Place an order for my Pizza and see the total charge for it.
+		Have an option to order as many pizzas as I want.
+		 Have an option to have the pizza delivered or not.  If delivered I want to be alerted how much the delivery charge will be. 
+		 If I want my pizza to be delivered, I want to be prompted to enter where the delivery should be made and an alert saying '' your order will be delivered to your location"
+		 See a checkout button that when clicked shows the total amount charged for the orders.
+
+    Determine the prices for each pizza size.
+    Each pizza topping should have a set value depending on the size of the pizza.
+    Determine the cost for the crust
+    The total cost of a pizza should constitute, the crust, topping(s) and size of the pizza.
+    On checkout, the application displays the orders’ summary together with the total amount charged. For example, if the customer has made more than one pizza order, on checkout the application displays a summary of all the orders he/she has made and the total amount to pay for all his/her orders.
+	-->
+	<div class="main">
+		<div class="row">
+			<div class="column">
+				<p>Veg Extravaganza</p>
+				<img src="images/93646-veg-extravaganza.jpg" style="width:100%">
+				<div class="size">
+					<select id="size">
+						<option value="small">Small</option>
+						<option value="medium">Medium</option>
+						<option value="large">Large</option>
+						
+					</select>
+				</div>
+				<div class="crust">
+					<select id="myselect">
+						<option value="crispy">Crispy</option>
+						<option value="stuffed">Stuffed</option>
+						<option value="glutenfree">Gluten-Free</option>
+
+					</select>
+				</div>
+				<div class="toppings">
+					<select id="toppings">
+						<option value="pepperoni">Pepperoni</option>
+						<option value="mushrooms">Mushrooms</option>
+						<option value="onions">Onions</option>
+						<option value="sausage">Sausage</option>
+						<option value="bacon">Bacon</option>
+						<option value="extracheese">Extra Cheese</option>
+						<option value="blackolives">Black Oilives</option>
+						<option value="greenpepper">Green Pepper</option>
+						<option value="pineapple">Pineapple</option>
+						<option value="spinach">Spinach</option>
+						
+					</select>
+				</div>
+				<div class="amount">
+					<input type="text" placeholder="Enter Amount 1, 2, 3 etc">
+				</div>
+		</div>
+					<div class="column">
+						<p>American Cheeseburger</p>
+				<img src="images/americancheeseburger.jpeg" style="width:100%">
+				<div class="size">
+					<select id="size">
+						<option value="small">Small</option>
+						<option value="medium">Medium</option>
+						<option value="large">Large</option>
+						
+					</select>
+				</div>
+				<div class="crust">
+					<select id="myselect">
+						<option value="crispy">Crispy</option>
+						<option value="stuffed">Stuffed</option>
+						<option value="glutenfree">Gluten-Free</option>
+
+					</select>
+				</div>
+				<div class="toppings">
+					<select id="toppings">
+						<option value="pepperoni">Pepperoni</option>
+						<option value="mushrooms">Mushrooms</option>
+						<option value="onions">Onions</option>
+						<option value="sausage">Sausage</option>
+						<option value="bacon">Bacon</option>
+						<option value="extracheese">Extra Cheese</option>
+						<option value="blackolives">Black Oilives</option>
+						<option value="greenpepper">Green Pepper</option>
+						<option value="pineapple">Pineapple</option>
+						<option value="spinach">Spinach</option>
+						
+					</select>
+				</div>
+				<div class="amount">
+					<input type="text" placeholder="Enter Amount 1, 2, 3 etc">
+				</div>
+		</div>
+					<div class="column">
+						<p>Chicken Pizza</p>
+				<img src="images/Chicken-Pizza_exps30800_FM143298B03_11_8bC_RMS-2-696x696.jpg" style="width:100%">
+				<div class="size">
+					<select id="size">
+						<option value="small">Small</option>
+						<option value="medium">Medium</option>
+						<option value="large">Large</option>
+						
+					</select>
+				</div>
+				<div class="crust">
+
+					<select id="myselect">
+						<option value="crispy">Crispy</option>
+						<option value="stuffed">Stuffed</option>
+						<option value="glutenfree">Gluten-Free</option>
+
+					</select>
+				</div>
+				<div class="toppings">
+					<select id="toppings">
+						<option value="pepperoni">Pepperoni</option>
+						<option value="mushrooms">Mushrooms</option>
+						<option value="onions">Onions</option>
+						<option value="sausage">Sausage</option>
+						<option value="bacon">Bacon</option>
+						<option value="extracheese">Extra Cheese</option>
+						<option value="blackolives">Black Oilives</option>
+						<option value="greenpepper">Green Pepper</option>
+						<option value="pineapple">Pineapple</option>
+						<option value="spinach">Spinach</option>
+						
+					</select>
+				</div>
+				<div class="amount">
+					<input type="text" placeholder="Enter Amount 1, 2, 3 etc">
+				</div>
+		</div>
+					<div class="column">
+						<p>Chitikka Pizza</p>
+				<img src="images/chitikka.jpg" style="width:100%">
+				<div class="size">
+					<select id="size">
+						<option value="small">Small</option>
+						<option value="medium">Medium</option>
+						<option value="large">Large</option>
+						
+					</select>
+				</div>
+				<div class="crust">
+					<select id="myselect">
+						<option value="crispy">Crispy</option>
+						<option value="stuffed">Stuffed</option>
+						<option value="glutenfree">Gluten-Free</option>
+
+					</select>
+				</div>
+				<div class="toppings">
+					<select id="toppings">
+						<option value="pepperoni">Pepperoni</option>
+						<option value="mushrooms">Mushrooms</option>
+						<option value="onions">Onions</option>
+						<option value="sausage">Sausage</option>
+						<option value="bacon">Bacon</option>
+						<option value="extracheese">Extra Cheese</option>
+						<option value="blackolives">Black Oilives</option>
+						<option value="greenpepper">Green Pepper</option>
+						<option value="pineapple">Pineapple</option>
+						<option value="spinach">Spinach</option>
+						
+					</select>
+				</div>
+				<div class="amount">
+					<input type="text" placeholder="Enter Amount 1, 2, 3 etc">
+				</div>
+		</div>
+					<div class="column">
+						<p>Creamy-BBQ-Pizzachicken</p>
+				<img src="images/Creamy-BBQ-Pizzachicken.jpg" style="width:100%">
+				<div class="size">
+					<select id="size">
+						<option value="small">Small</option>
+						<option value="medium">Medium</option>
+						<option value="large">Large</option>
+						
+					</select>
+				</div>
+				<div class="crust">
+					<select id="myselect">
+						<option value="crispy">Crispy</option>
+						<option value="stuffed">Stuffed</option>
+						<option value="glutenfree">Gluten-Free</option>
+
+					</select>
+				</div>
+				<div class="toppings">
+					<select id="toppings">
+						<option value="pepperoni">Pepperoni</option>
+						<option value="mushrooms">Mushrooms</option>
+						<option value="onions">Onions</option>
+						<option value="sausage">Sausage</option>
+						<option value="bacon">Bacon</option>
+						<option value="extracheese">Extra Cheese</option>
+						<option value="blackolives">Black Oilives</option>
+						<option value="greenpepper">Green Pepper</option>
+						<option value="pineapple">Pineapple</option>
+						<option value="spinach">Spinach</option>
+						
+					</select>
+				</div>
+				<div class="amount">
+					<input type="text" placeholder="Enter Amount 1, 2, 3 etc">
+				</div>
+		</div>
+					<div class="column">
+						<p>Hawaiian Pizza</p>
+				<img src="images/hawaiian.jpeg" style="width:100%">
+				<div class="size">
+					<select id="size">
+						<option value="small">Small</option>
+						<option value="medium">Medium</option>
+						<option value="large">Large</option>
+						
+					</select>
+				</div>
+				<div class="crust">
+					<select id="myselect">
+						<option value="crispy">Crispy</option>
+						<option value="stuffed">Stuffed</option>
+						<option value="glutenfree">Gluten-Free</option>
+
+					</select>
+				</div>
+				<div class="toppings">
+					<select id="toppings">
+						<option value="pepperoni">Pepperoni</option>
+						<option value="mushrooms">Mushrooms</option>
+						<option value="onions">Onions</option>
+						<option value="sausage">Sausage</option>
+						<option value="bacon">Bacon</option>
+						<option value="extracheese">Extra Cheese</option>
+						<option value="blackolives">Black Oilives</option>
+						<option value="greenpepper">Green Pepper</option>
+						<option value="pineapple">Pineapple</option>
+						<option value="spinach">Spinach</option>
+						
+					</select>
+				</div>
+				<div class="amount">
+					<input type="text" placeholder="Enter Amount 1, 2, 3 etc">
+				</div>
+		</div>
+					<div class="column">
+						<p>Margherita Pizza</p>
+				<img src="images/margherita.jpg" style="width:100%">
+				<div class="size">
+					<select id="size">
+						<option value="small">Small</option>
+						<option value="medium">Medium</option>
+						<option value="large">Large</option>
+						
+					</select>
+				</div>
+				<div class="crust">
+					<select id="myselect">
+						<option value="crispy">Crispy</option>
+						<option value="stuffed">Stuffed</option>
+						<option value="glutenfree">Gluten-Free</option>
+
+					</select>
+				</div>
+				<div class="toppings">
+					<select id="toppings">
+						<option value="pepperoni">Pepperoni</option>
+						<option value="mushrooms">Mushrooms</option>
+						<option value="onions">Onions</option>
+						<option value="sausage">Sausage</option>
+						<option value="bacon">Bacon</option>
+						<option value="extracheese">Extra Cheese</option>
+						<option value="blackolives">Black Oilives</option>
+						<option value="greenpepper">Green Pepper</option>
+						<option value="pineapple">Pineapple</option>
+						<option value="spinach">Spinach</option>
+						
+					</select>
+				</div>
+				<div class="amount">
+					<input type="text" placeholder="Enter Amount 1, 2, 3 etc">
+				</div>
+		</div>
+					<div class="column">
+						<p>Meatza</p>
+				<img src="images/meatza.jpg" style="width:100%">
+				<div class="size">
+					<select id="size">
+						<option value="small">Small</option>
+						<option value="medium">Medium</option>
+						<option value="large">Large</option>
+						
+					</select>
+				</div>
+				<div class="crust">
+					<select id="myselect">
+						<option value="crispy">Crispy</option>
+						<option value="stuffed">Stuffed</option>
+						<option value="glutenfree">Gluten-Free</option>
+
+					</select>
+				</div>
+				<div class="toppings">
+					<select id="toppings">
+						<option value="pepperoni">Pepperoni</option>
+						<option value="mushrooms">Mushrooms</option>
+						<option value="onions">Onions</option>
+						<option value="sausage">Sausage</option>
+						<option value="bacon">Bacon</option>
+						<option value="extracheese">Extra Cheese</option>
+						<option value="blackolives">Black Oilives</option>
+						<option value="greenpepper">Green Pepper</option>
+						<option value="pineapple">Pineapple</option>
+						<option value="spinach">Spinach</option>
+						
+					</select>
+				</div>
+				<div class="amount">
+					<input type="text" placeholder="Enter Amount 1, 2, 3 etc">
+				</div>
+		</div>
+					<div class="column">
+						<p>Pepperoni Passion</p>
+				<img src="images/pepperonipassion.jpg" style="width:100%">
+				<div class="size">
+					<select id="size">
+						<option value="small">Small</option>
+						<option value="medium">Medium</option>
+						<option value="large">Large</option>
+						
+					</select>
+				</div>
+				<div class="crust">
+					<select id="myselect">
+						<option value="crispy">Crispy</option>
+						<option value="stuffed">Stuffed</option>
+						<option value="glutenfree">Gluten-Free</option>
+
+					</select>
+				</div>
+				<div class="toppings">
+					<select id="toppings">
+						<option value="pepperoni">Pepperoni</option>
+						<option value="mushrooms">Mushrooms</option>
+						<option value="onions">Onions</option>
+						<option value="sausage">Sausage</option>
+						<option value="bacon">Bacon</option>
+						<option value="extracheese">Extra Cheese</option>
+						<option value="blackolives">Black Oilives</option>
+						<option value="greenpepper">Green Pepper</option>
+						<option value="pineapple">Pineapple</option>
+						<option value="spinach">Spinach</option>
+						
+					</select>
+				</div>
+				<div class="amount">
+					<input type="text" placeholder="Enter Amount 1, 2, 3 etc">
+				</div>
+		</div>
+					<div class="column">
+						<p>Periperi Chicken</p>
+				<img src="images/periperichicken.jpg" style="width:100%">
+				<div class="size">
+					<select id="size">
+						<option value="small">Small</option>
+						<option value="medium">Medium</option>
+						<option value="large">Large</option>
+						
+					</select>
+				</div>
+				<div class="crust">
+					<select id="myselect">
+						<option value="crispy">Crispy</option>
+						<option value="stuffed">Stuffed</option>
+						<option value="glutenfree">Gluten-Free</option>
+
+					</select>
+				</div>
+				<div class="toppings">
+					<select id="toppings">
+						<option value="pepperoni">Pepperoni</option>
+						<option value="mushrooms">Mushrooms</option>
+						<option value="onions">Onions</option>
+						<option value="sausage">Sausage</option>
+						<option value="bacon">Bacon</option>
+						<option value="extracheese">Extra Cheese</option>
+						<option value="blackolives">Black Oilives</option>
+						<option value="greenpepper">Green Pepper</option>
+						<option value="pineapple">Pineapple</option>
+						<option value="spinach">Spinach</option>
+						
+					</select>
+				</div>
+				<div class="amount">
+					<input type="text" placeholder="Enter Amount 1, 2, 3 etc">
+				</div>
+		</div>
+					<div class="column">
+						<p>Piccadilly-BBQ Grill Pizza Steak</p>
+				<img src="images/Piccadilly-BBQ-Grill-Pizza-071014_0steak.jpg" style="width:100%">
+				<div class="size">
+					<select id="size">
+						<option value="small">Small</option>
+						<option value="medium">Medium</option>
+						<option value="large">Large</option>
+						
+					</select>
+				</div>
+				<div class="crust">
+					<select id="myselect">
+						<option value="crispy">Crispy</option>
+						<option value="stuffed">Stuffed</option>
+						<option value="glutenfree">Gluten-Free</option>
+
+					</select>
+				</div>
+				<div class="toppings">
+					<select id="toppings">
+						<option value="pepperoni">Pepperoni</option>
+						<option value="mushrooms">Mushrooms</option>
+						<option value="onions">Onions</option>
+						<option value="sausage">Sausage</option>
+						<option value="bacon">Bacon</option>
+						<option value="extracheese">Extra Cheese</option>
+						<option value="blackolives">Black Oilives</option>
+						<option value="greenpepper">Green Pepper</option>
+						<option value="pineapple">Pineapple</option>
+						<option value="spinach">Spinach</option>
+						
+					</select>
+				</div>
+				<div class="amount">
+					<input type="text" placeholder="Enter Amount 1, 2, 3 etc">
+				</div>
+		</div>
+					<div class="column">
+						<p>Regina Pizza</p>
+				<img src="images/regina-pizza.jpg" style="width:100%">
+				<div class="size">
+					<select id="size">
+						<option value="small">Small</option>
+						<option value="medium">Medium</option>
+						<option value="large">Large</option>
+						
+					</select>
+				</div>
+				<div class="crust">
+					<select id="myselect">
+						<option value="crispy">Crispy</option>
+						<option value="stuffed">Stuffed</option>
+						<option value="glutenfree">Gluten-Free</option>
+
+					</select>
+				</div>
+				<div class="toppings">
+					<select id="toppings">
+						<option value="pepperoni">Pepperoni</option>
+						<option value="mushrooms">Mushrooms</option>
+						<option value="onions">Onions</option>
+						<option value="sausage">Sausage</option>
+						<option value="bacon">Bacon</option>
+						<option value="extracheese">Extra Cheese</option>
+						<option value="blackolives">Black Oilives</option>
+						<option value="greenpepper">Green Pepper</option>
+						<option value="pineapple">Pineapple</option>
+						<option value="spinach">Spinach</option>
+						
+					</select>
+				</div>
+				<div class="amount">
+					<input type="text" placeholder="Enter Amount 1, 2, 3 etc">
+				</div>
+		</div>
+					<div class="column">
+						<p>Swahili</p>
+				<img src="images/swahili.jpg" style="width:100%">
+				<div class="size">
+					<select id="size">
+						<option value="small">Small</option>
+						<option value="medium">Medium</option>
+						<option value="large">Large</option>
+						
+					</select>
+				</div>
+				<div class="crust">
+					<select id="myselect">
+						<option value="crispy">Crispy</option>
+						<option value="stuffed">Stuffed</option>
+						<option value="glutenfree">Gluten-Free</option>
+
+					</select>
+				</div>
+				<div class="toppings">
+					<select id="toppings">
+						<option value="pepperoni">Pepperoni</option>
+						<option value="mushrooms">Mushrooms</option>
+						<option value="onions">Onions</option>
+						<option value="sausage">Sausage</option>
+						<option value="bacon">Bacon</option>
+						<option value="extracheese">Extra Cheese</option>
+						<option value="blackolives">Black Oilives</option>
+						<option value="greenpepper">Green Pepper</option>
+						<option value="pineapple">Pineapple</option>
+						<option value="spinach">Spinach</option>
+						
+					</select>
+				</div>
+				<div class="amount">
+					<input type="text" placeholder="Enter Amount 1, 2, 3 etc">
+				</div>
+		</div>
+					<div class="column">
+						<p>Veggie Deluxe</p>
+				<img src="images/veggiedeluxe.jpg" style="width:100%">
+				<div class="size">
+					<select id="size">
+						<option value="small">Small</option>
+						<option value="medium">Medium</option>
+						<option value="large">Large</option>
+						
+					</select>
+				</div>
+				<div class="crust">
+					<select id="myselect">
+						<option value="crispy">Crispy</option>
+						<option value="stuffed">Stuffed</option>
+						<option value="glutenfree">Gluten-Free</option>
+
+					</select>
+				</div>
+				<div class="toppings">
+					<select id="toppings">
+						<option value="pepperoni">Pepperoni</option>
+						<option value="mushrooms">Mushrooms</option>
+						<option value="onions">Onions</option>
+						<option value="sausage">Sausage</option>
+						<option value="bacon">Bacon</option>
+						<option value="extracheese">Extra Cheese</option>
+						<option value="blackolives">Black Oilives</option>
+						<option value="greenpepper">Green Pepper</option>
+						<option value="pineapple">Pineapple</option>
+						<option value="spinach">Spinach</option>
+						
+					</select>
+				</div>
+				<div class="amount">
+					<input type="text" placeholder="Enter Amount 1, 2, 3 etc">
+				</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+	</div>
+<script type="text/javascript" src="style.js"></script>
 
 </body>
 </html>
