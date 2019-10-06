@@ -19,3 +19,8 @@
   padding: 8px;
 }
 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
