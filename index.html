@@ -2,30 +2,53 @@
 <html>
 <head>
 	<title>pizza.palace</title>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<!--
-		Choose the size of pizza I want e.g Small, Medium, Large
-		Choose what kind of crust I would like the pizza to have e.g Crispy, Stuffed, Gluten-free
-		Choose the topping(s) I want on my pizza.
-		Place an order for my Pizza and see the total charge for it.
-		Have an option to order as many pizzas as I want.
-		 Have an option to have the pizza delivered or not.  If delivered I want to be alerted how much the delivery charge will be. 
-		 If I want my pizza to be delivered, I want to be prompted to enter where the delivery should be made and an alert saying '' your order will be delivered to your location"
-		 See a checkout button that when clicked shows the total amount charged for the orders.
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
 
-    Determine the prices for each pizza size.
-    Each pizza topping should have a set value depending on the size of the pizza.
-    Determine the cost for the crust
-    The total cost of a pizza should constitute, the crust, topping(s) and size of the pizza.
-    On checkout, the application displays the orders’ summary together with the total amount charged. For example, if the customer has made more than one pizza order, on checkout the application displays a summary of all the orders he/she has made and the total amount to pay for all his/her orders.
-	-->
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="imaages/swahili.jpg" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="images/Chicken-Pizza_exps30800_FM143298B03_11_8bC_RMS-2-696x696.jpg" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="images/chitikka.jpg" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
 	<div class="main">
-		<button onclick="getTotal()">Get Total Cost</button>
-		<div class="row">
+		<button onclick="getTotal()" class="btn success">Get Total Cost</button>
+
+			<div class="row">
 			<div class="column">
-				<p>Veg Extravaganza Ksh 1200</p>
+				<h1>Veg Extravaganza Ksh 1200</h1>
 				<img src="images/93646-veg-extravaganza.jpg" style="width:100%">
 				<div class="size">
 					<select id="size" size="1">
@@ -66,7 +89,7 @@
 				</div>
 		</div>
 					<div class="column">
-						<p>American Cheeseburger</p>
+						<h1>American Cheeseburger</h1>
 				<img src="images/93646-veg-extravaganza.jpg" style="width:100%">
 				<div class="size1">
 					<select id="size1">
@@ -107,7 +130,7 @@
 				</div>
 		</div>
 					<div class="column">
-						<p>Chicken Pizza</p>
+						<h1>Chicken Pizza</h1>
 				<img src="images/93646-veg-extravaganza.jpg" style="width:100%">
 				<div class="size">
 					<select id="size2">
@@ -148,7 +171,7 @@
 				</div>
 		</div>
 					<div class="column">
-						<p>Chitikka Pizza</p>
+						<h1>Chitikka Pizza</h1>
 				<img src="images/93646-veg-extravaganza.jpg" style="width:100%">
 				<div class="size">
 					<select id="size3">
@@ -189,7 +212,7 @@
 				</div>
 		</div>
 					<div class="column">
-						<p>Creamy-BBQ-Pizzachicken</p>
+						<h1>Creamy-BBQ-Pizzachicken</h1>
 				<img src="images/93646-veg-extravaganza.jpg" style="width:100%">
 				<div class="size">
 					<select id="size4">
@@ -230,7 +253,7 @@
 				</div>
 		</div>
 					<div class="column">
-						<p>Hawaiian Pizza</p>
+						<h1>Hawaiian Pizza</h1>
 				<img src="images/93646-veg-extravaganza.jpg" style="width:100%">
 				<div class="size">
 					<select id="size5">
@@ -271,7 +294,7 @@
 				</div>
 		</div>
 					<div class="column">
-						<p>Margherita Pizza</p>
+						<h1>Margherita Pizza</h1>
 				<img src="images/93646-veg-extravaganza.jpg" style="width:100%">
 				<div class="size">
 					<select id="size6">
@@ -312,7 +335,7 @@
 				</div>
 		</div>
 					<div class="column">
-						<p>Meatza</p>
+						<h1>Meatza</h1>
 				<img src="images/93646-veg-extravaganza.jpg" style="width:100%">
 				<div class="size">
 					<select id="size7">
