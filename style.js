@@ -53,10 +53,15 @@ var meaCrust = parseInt(document.getElementById("crust7").value);
 var meaTop = parseInt(document.getElementById("toppings7").value);
 var meaAmt = parseInt(document.getElementById("amt7").value);
 var meaTotal = ((meaSize + meaCrust + meaTop) * meaAmt);
+var transport =  parseInt(document.getElementById("city").value);
 
 
 
-var finalTotal = eTotal + aTotal + chickenTotal + chitikaTotal + creamyTotal + hawTotal + marTotal + meaTotal;
+var finalTotal = eTotal + aTotal + chickenTotal + chitikaTotal + creamyTotal + hawTotal + marTotal + meaTotal + transport;
 
-alert(finalTotal);
+
+alert(finalTotal + " " + "Ksh" + "This Is Iclusive of The transportation Cost" );
+ 
+
+
 }
